@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .url-input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .url-input {
+            border-radius: 50px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #444;
+            color: #fff;
+            width: 300px;
+            transition: border-color 0.2s;
+        }
+
+        .url-input:focus {
+            outline: none;
+            border-color: transparent;
+        }
+
+        .url-shorten-btn {
+            border-radius: 50px;
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .url-shorten-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Enter URL</h1>
+    <form action="#" method="post">
+        <div class="url-input-container mt-4">
+            <label for="url"></label><input type="text" class="url-input" name="url" id="url" placeholder="Enter URL">
+            <button type="submit" class="url-shorten-btn">Shorten</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
